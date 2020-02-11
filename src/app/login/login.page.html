@@ -1,0 +1,40 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar justify-content-center>
+      <ion-title>login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-grid>
+      <ion-row justify-content-center>
+        <ion-col>
+          <div padding>
+            <ion-item>
+              <ion-input type="text" placeholder="User Name" [(ngModel)]="user_name" name="user_name" event="ionBlur">
+              </ion-input>
+            </ion-item>
+          </div>
+          <div padding>
+
+            <ion-item>
+              <ion-input type="password" placeholder="*******" [(ngModel)]="password" name="password"></ion-input>
+            </ion-item>
+          </div>
+
+          <div padding>
+            <ion-button expand="block" color="primary" (click)="login()">Login</ion-button>
+          </div>
+          <div padding>
+            <ion-button expand="block" color="primary" (click)="next()">next</ion-button>
+          </div>
+          <div padding>
+            <a href="#">Forgot password?</a>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-content>
+
+</ion-app>

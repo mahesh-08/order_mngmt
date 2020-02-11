@@ -1,0 +1,160 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-back-button></ion-back-button>
+      <ion-datetime displayFormat="DD MMM YY, h:mm A" [(ngModel)]="myDate" ></ion-datetime>
+    <ion-title >End my Day</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-card >
+        <!--  <ion-item button (click)="getdealer()" class="activated"> -->
+           <ion-item >
+           <ion-card-content>
+
+
+
+
+            
+           <!--  <ion-grid>
+              <ion-row>
+                <ion-col>
+                    <ion-icon name="home"></ion-icon>
+                </ion-col>
+                <ion-col>
+                    <ion-label>{{totalDistributor}}</ion-label>
+                    <ion-label>Outlets</ion-label>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+
+            <ion-grid>
+                <ion-row>
+                  <ion-col>
+                      <ion-icon name="trending-up"></ion-icon>
+                  </ion-col>
+                  <ion-col>
+                      <ion-label>{{productive}}</ion-label>
+                      <ion-label>productive</ion-label>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+
+              <ion-grid>
+                  <ion-row>
+                    <ion-col>
+                        <ion-icon name="list-box"></ion-icon>
+                    </ion-col>
+                    <ion-col>
+                        <ion-label>{{totalDistributor}}</ion-label>
+                        <ion-label>Covered</ion-label>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+
+                <ion-grid>
+                    <ion-row>
+                      <ion-col>
+                          <ion-icon name="trending-down"></ion-icon>
+                      </ion-col>
+                      <ion-col>
+                          <ion-label>{{totalDistributor-productive}}</ion-label>
+                          <ion-label>Non-Produvtive</ion-label>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid> -->
+
+
+
+
+                  <ion-row>
+                      <ion-col>
+                          <ion-grid>
+                              <ion-row>
+                                <ion-col>
+                                    <ion-icon name="home"></ion-icon>
+                                </ion-col>
+                                <ion-col>
+                                    <ion-label>{{totalDistributor}}</ion-label>
+                                    <ion-label>Outlets</ion-label>
+                                </ion-col>
+                              </ion-row>
+                            </ion-grid>
+                      </ion-col>
+
+                      <ion-col>
+                          <ion-grid>
+                              <ion-row>
+                                <ion-col>
+                                    <ion-icon name="trending-up"></ion-icon>
+                                </ion-col>
+                                <ion-col>
+                                    <ion-label>{{productive}}</ion-label>
+                                    <ion-label>productive</ion-label>
+                                </ion-col>
+                              </ion-row>
+                            </ion-grid>
+                      </ion-col>
+                    </ion-row>
+
+                    <ion-row>
+                      <ion-col>
+                          <ion-grid>
+                              <ion-row>
+                                <ion-col>
+                                    <ion-icon name="list-box"></ion-icon>
+                                </ion-col>
+                                <ion-col>
+                                    <ion-label>{{totalDistributor}}</ion-label>
+                                    <ion-label>Covered</ion-label>
+                                </ion-col>
+                              </ion-row>
+                            </ion-grid>
+                      </ion-col>
+
+                      <ion-col>
+                          <ion-grid>
+                              <ion-row>
+                                <ion-col>
+                                    <ion-icon name="trending-down"></ion-icon>
+                                </ion-col>
+                                <ion-col>
+                                    <ion-label>{{totalDistributor-productive}}</ion-label>
+                                    <ion-label>Non-Produvtive</ion-label>
+                                </ion-col>
+                              </ion-row>
+                            </ion-grid>
+                      </ion-col>
+                    </ion-row>
+ 
+           </ion-card-content>
+         </ion-item>
+       </ion-card>
+
+<h4>Order Details</h4>
+
+<ion-card *ngFor="let details of orderDetails">
+       <ion-item >
+       <ion-card-header>
+         {{details.dealer_name}}
+       </ion-card-header>
+
+       <ion-card-content>
+          <ion-icon name="cart"></ion-icon>
+        Order {{details.item_quantity}} items
+       </ion-card-content>
+
+       <ion-card-content>
+          {{details.total_weight}}Kg
+        </ion-card-content>
+
+     </ion-item>
+   </ion-card>
+
+
+
+
+</ion-content>
+
+<ion-button expand="fill" (click)="endNow()">End Now</ion-button>

@@ -1,0 +1,29 @@
+
+<!-- <ion-router-outlet></ion-router-outlet> -->
+<ion-header>
+    <ion-toolbar>
+      <ion-list>
+        <ion-item>
+            <ion-back-button></ion-back-button>
+           <ion-label >Selected Region </ion-label>
+           <ion-label >{{selectedRegion}}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+
+    <ion-card *ngFor="let dealer of dealerList" (click)="getdealer(dealer)">
+          <ion-item button>
+          <ion-card-header>
+            {{dealer.dealer_name}}
+          </ion-card-header>
+          <ion-card-content>
+            {{dealer.address}}
+          </ion-card-content>
+        </ion-item>
+      </ion-card>
+
+</ion-content>
+<ion-button expand="fill" (click)="endDay()">End Day</ion-button>

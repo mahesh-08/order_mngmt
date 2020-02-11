@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-list>
+      <ion-item>
+        <ion-back-button></ion-back-button>
+        <ion-label>Order For</ion-label>
+        <ion-label>{{dealer_name}}</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-list *ngFor="let crops of crop_types">
+    <ion-item detail="true">
+      <ion-button (click)=" getProducts(crops.crops_id)">{{crops.crops_type}}({{crops.totalquanity}})</ion-button>
+    </ion-item>
+    <ion-list *ngFor="let item of productList" (click)="order(item)">
+        <ion-item *ngIf="crops.crops_id==crops_id" button>
+          <ion-label button>{{item.product_name}}({{item.totalquanity}})</ion-label>
+        </ion-item>
+      </ion-list>
+  </ion-list>
+</ion-content>
+
+<ion-label text-center>Total {{totalItem}} Items   {{totalquantity}} weight</ion-label>
+<ion-button (click)="placeOrder()">Save Order</ion-button>
+<ion-button (click)="cancelBtn()" color="medium"> Cancel</ion-button>

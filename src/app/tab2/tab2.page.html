@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title text-center>
+      Dashboard
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <h2>Good Morning, {{user_name}}</h2>
+    <ion-card >
+        <ion-card-header>
+          <ion-button color="light" (click)=" btnClick('d')">D</ion-button>
+          <ion-button color="light" (click)=" btnClick('1w')">1W</ion-button>
+          <ion-button color="light" (click)=" btnClick('1m')">1M</ion-button>
+          <ion-button color="light" (click)=" btnClick('4m')">4m</ion-button>
+          <ion-button color="light" (click)=" btnClick('y')">Y</ion-button>
+        </ion-card-header>
+        <ion-card-content>
+            {{total}}
+          </ion-card-content>
+  
+      </ion-card>
+</ion-content>

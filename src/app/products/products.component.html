@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-list>
+      <ion-item>
+        <ion-label>{{product_name}} </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item>
+    <ion-label>50 Kg</ion-label>
+    <!-- <ion-button (click)="add50KG()">Add</ion-button> -->
+
+    <ion-button (click)="add50KG('-')">-</ion-button>
+    <ion-input [value]="kg50"></ion-input>
+    <ion-button (click)="add50KG('+')">+</ion-button>
+
+  </ion-item>
+  <ion-item>
+    <ion-label>20 Kg</ion-label>
+    <!-- <ion-button (click)="add20KG()">Add</ion-button> -->
+
+    <ion-button (click)="add20KG('-')">-</ion-button>
+    <ion-input [value]="kg20"></ion-input>
+    <ion-button (click)="add20KG('+')">+</ion-button>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>10 Kg</ion-label>
+    <ion-button (click)="add10KG('-')">-</ion-button>
+    <ion-input [value]="kg10"></ion-input>
+    <ion-button (click)="add10KG('+')">+</ion-button>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>5 Kg</ion-label>
+    <ion-button (click)="add5KG('-')">-</ion-button>
+    <ion-input  [value]="kg5"></ion-input>
+    <ion-button (click)="add5KG('+')">+</ion-button>
+  </ion-item>
+  <ion-item>
+    <ion-label>1 Kg</ion-label>
+    <!-- <ion-button (click)="add1KG()">Add</ion-button> -->
+    <ion-button (click)="add1KG('-')">-</ion-button>
+    <ion-input  [value]="kg1"></ion-input>
+    <ion-button (click)="add1KG('+')">+</ion-button>
+    
+  </ion-item>
+  </ion-list>
+
+
+</ion-content>
+
+<ion-button expand="fill" (click)="addOrder()">Add Order</ion-button>
+<ion-button color="medium" (click)="cancelBtn()"> Cancel</ion-button>
+
+
+
+
+
+  

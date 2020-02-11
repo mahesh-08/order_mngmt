@@ -1,0 +1,60 @@
+<!-- <ion-router-outlet></ion-router-outlet> -->
+ <ion-app>
+ <!-- <ion-router-outlet></ion-router-outlet> -->
+
+<ion-header>
+  <ion-toolbar>
+    <ion-list>
+      <!-- <ion-list-header>Select  region</ion-list-header> -->
+      <ion-item>
+          <ion-icon name="pin"></ion-icon>
+         <ion-label>region</ion-label>
+        <ion-select placeholder="Select Distributer" (ionChange)="getDealer(selectedRegion)" [(ngModel)]="selectedRegion" name="selectedRegion" >
+          <div *ngFor="let item of regionList">
+            <ion-select-option value={{item.region_id}} >{{item.region_name}}</ion-select-option>
+          </div>
+        </ion-select>
+      </ion-item>    
+    </ion-list>
+  </ion-toolbar>
+</ion-header> 
+
+<ion-content>
+    <!-- <ion-list>
+        <ion-list-header>Select  region</ion-list-header>
+        <ion-item>
+           <ion-label>region</ion-label>
+          <ion-select placeholder="Select Distributer" (ionChange)="getDealer(selectedRegion)" [(ngModel)]="selectedRegion" name="selectedRegion" >
+            <div *ngFor="let item of regionList">
+              <ion-select-option value={{item.region_id}} >{{item.region_name}}</ion-select-option>
+            </div>
+          </ion-select>
+        </ion-item>    
+      </ion-list> -->
+
+      <!-- <ion-list>
+        <ion-label>Select Distributer</ion-label>
+        <ion-item *ngFor="let dealer of dealerList">
+          <ion-label>{{dealer}}</ion-label>
+        </ion-item>
+      </ion-list> -->
+
+      <ion-card *ngFor="let dealer of dealerList">
+        <ion-card-header>
+          {{dealer.dealer_name}}
+        </ion-card-header>
+        <ion-card-content>
+          {{dealer.address}}
+        </ion-card-content>
+      </ion-card>
+      <ion-card *ngIf="dealerList==null || dealerList==0">
+        <ion-card-header>
+         <h4>No dealer in this region</h4>
+        </ion-card-header>
+        
+      </ion-card>
+  </ion-content>
+
+  <ion-button>Start Day</ion-button>
+
+</ion-app>

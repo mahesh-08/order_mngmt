@@ -1,0 +1,47 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="pin" size="small"></ion-icon>
+         
+          <ion-label>Select Region</ion-label>
+          <ion-select interface="popover" placeholder="Select Region" (ionChange)="getDealer(selectedRegionId)"
+            [(ngModel)]="selectedRegionId" name="selectedRegionId">
+            <div *ngFor="let item of regionList">
+              <ion-select-option value={{item.region_id}} name=item.region_name>{{item.region_name}}
+              </ion-select-option>
+            </div>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+  
+    <ion-card *ngFor="let dealer of dealerList">
+      <ion-item>
+        <ion-card-header>
+          {{dealer.dealer_name}}
+
+        </ion-card-header>
+        <ion-card-content>
+          {{dealer.address}}
+        </ion-card-content>
+      </ion-item>
+    </ion-card>
+
+
+    <ion-card *ngIf="dealerList==null || dealerList==0">
+      <ion-card-header>
+        <h4>No dealer in this region</h4>
+      </ion-card-header>
+        
+    </ion-card>
+  </ion-content>
+
+  <ion-button color="primary" (click)="startDay()"> Start Day </ion-button>
+
+
+</ion-app>
