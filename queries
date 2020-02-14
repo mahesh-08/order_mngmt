@@ -1,0 +1,46 @@
+SELECT * FROM novogold.user_session;
+
+insert into user_session values(10001,123,curdate(),null,18.490112,73.8549919);
+
+
+
+
+SELECT * FROM novogold.orders;
+
+
+insert into orders values(10010,321,101,'2019-2-1');
+
+
+SELECT * FROM novogold.order_package;
+
+insert into orders values(10010,321,101,'2019-2-1');
+
+insert into order_package values(10010,11,102,1,1,3,3,1);
+
+select count(*) as Total_order from order_package where 
+order_id = (select o.order_id from orders o,dealers d where d.dealer_id=o.dealer_id and d.dealer_name='AgroStar' group by order_date order by order_date desc limit 1 ); 
+
+select o.order_id from orders o,dealers d where d.dealer_id=o.dealer_id and d.dealer_name='AgroStar' group by order_date order by order_date desc limit 1;
+/* */
+select sum(50kg*50+20kg*20+10kg*10+5kg*5+1kg) from order_package op,orders o where op.order_id=o.order_id and o.user_id=123;
+
+
+/* curdate sale*/
+select sum(50kg*50+20kg*20+10kg*10+5kg*5+1kg) as day_sale  from order_package op,orders o where op.order_id=o.order_id and o.user_id=123 and o.order_date=curdate();
+
+/* weekly sale*/
+select sum(50kg*50+20kg*20+10kg*10+5kg*5+1kg) as week_Sale from order_package op,orders o where op.order_id=o.order_id and o.user_id=123 and o.order_date between DATE_SUB(now(),interval 7 day) and now();
+
+
+/* month sale*/
+select sum(50kg*50+20kg*20+10kg*10+5kg*5+1kg) as month_Sale from order_package op,orders o where op.order_id=o.order_id and o.user_id=123 and o.order_date between DATE_SUB(now(),interval 1 month) and now();
+
+
+/* 4 month sale*/
+select sum(50kg*50+20kg*20+10kg*10+5kg*5+1kg) as 4month_Sale from order_package op,orders o where op.order_id=o.order_id and o.user_id=123 and o.order_date between DATE_SUB(now(),interval 4 month) and now();
+
+
+/* year sale*/
+select sum(50kg*50+20kg*20+10kg*10+5kg*5+1kg) as month_Sale from order_package op,orders o where op.order_id=o.order_id and o.user_id=123 and o.order_date between DATE_SUB(now(),interval 1 year) and now();
+
+
