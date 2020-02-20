@@ -1,0 +1,134 @@
+[
+	{
+		"order_id" : 10001,
+		"user_id" : 1234,
+		"dealer_id" : 101,
+		"order_date" : "2019-01-15"
+	},
+	{
+		"order_id" : 10002,
+		"user_id" : 1234,
+		"dealer_id" : 102,
+		"order_date" : "2019-01-15"
+	},
+	{
+		"order_id" : 10003,
+		"user_id" : 1234,
+		"dealer_id" : 103,
+		"order_date" : "2019-01-15"
+	},
+	{
+		"order_id" : 10004,
+		"user_id" : 1111,
+		"dealer_id" : 104,
+		"order_date" : "2019-01-20"
+	},
+	{
+		"order_id" : 10005,
+		"user_id" : 1111,
+		"dealer_id" : 105,
+		"order_date" : "2019-01-20"
+	},
+	{
+		"order_id" : 10009,
+		"user_id" : 1234,
+		"dealer_id" : 101,
+		"order_date" : "2019-02-02"
+	},
+	{
+		"order_id" : 10010,
+		"user_id" : 321,
+		"dealer_id" : 101,
+		"order_date" : "2019-02-01"
+	},
+	{
+		"order_id" : 10015,
+		"user_id" : 1234,
+		"dealer_id" : 101,
+		"order_date" : "2019-07-06"
+	},
+	{
+		"order_id" : 10016,
+		"user_id" : 1234,
+		"dealer_id" : 104,
+		"order_date" : "2019-07-06"
+	},
+	{
+		"order_id" : 10017,
+		"user_id" : 1234,
+		"dealer_id" : 104,
+		"order_date" : "2019-07-06"
+	},
+	{
+		"order_id" : 10018,
+		"user_id" : 123,
+		"dealer_id" : 102,
+		"order_date" : "2019-07-06"
+	},
+	{
+		"order_id" : 10019,
+		"user_id" : 123,
+		"dealer_id" : 103,
+		"order_date" : "2019-07-06"
+	},
+	{
+		"order_id" : 10020,
+		"user_id" : 123,
+		"dealer_id" : 103,
+		"order_date" : "2019-07-06"
+	},
+	{
+		"order_id" : 10025,
+		"user_id" : 1234,
+		"dealer_id" : 104,
+		"order_date" : "2019-07-09"
+	},
+	{
+		"order_id" : 10026,
+		"user_id" : 1234,
+		"dealer_id" : 105,
+		"order_date" : "2019-07-09"
+	},
+	{
+		"order_id" : 10027,
+		"user_id" : 123,
+		"dealer_id" : 102,
+		"order_date" : "2019-07-09"
+	},
+	{
+		"order_id" : 10028,
+		"user_id" : 123,
+		"dealer_id" : 101,
+		"order_date" : "2019-07-09"
+	},
+	{
+		"order_id" : 10111,
+		"user_id" : 123,
+		"dealer_id" : 104,
+		"order_date" : "2019-07-09"
+	},
+	{
+		"order_id" : 10112,
+		"user_id" : 123,
+		"dealer_id" : 105,
+		"order_date" : "2019-07-09"
+	},
+	{
+		"order_id" : 100111,
+		"user_id" : 123,
+		"dealer_id" : 104,
+		"order_date" : "2019-07-22"
+	},
+	{
+		"order_id" : 101222,
+		"user_id" : 123,
+		"dealer_id" : 101,
+		"order_date" : "2019-07-11"
+	},
+	{
+		"order_id" : 101223,
+		"user_id" : 123,
+		"dealer_id" : 102,
+		"order_date" : "2019-07-11"
+	}
+]
