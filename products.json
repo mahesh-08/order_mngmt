@@ -1,0 +1,42 @@
+[
+  {
+    "product_id": 101,
+    "product_name": "reaserch paddy shraddha",
+    "crops_id": 11
+  },
+  {
+    "product_id": 102,
+    "product_name": "Hybrid maize Ajinkya",
+    "crops_id": 11
+  },
+  {
+    "product_id": 103,
+    "product_name": "Notified Indrayani",
+    "crops_id": 11
+  },
+  {
+    "product_id": 104,
+    "product_name": "Corns",
+    "crops_id": 22
+  },
+  {
+    "product_id": 105,
+    "product_name": "Bajara",
+    "crops_id": 22
+  },
+  {
+    "product_id": 106,
+    "product_name": "caret",
+    "crops_id": 33
+  },
+  {
+    "product_id": 107,
+    "product_name": "radish",
+    "crops_id": 33
+  },
+  {
+    "product_id": 108,
+    "product_name": "cabage",
+    "crops_id": 33
+  }
+]
