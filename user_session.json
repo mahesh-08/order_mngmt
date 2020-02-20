@@ -1,0 +1,10 @@
+[
+	{
+		"session_id" : 10001,
+		"user_id" : 123,
+		"start_time" : "2019-07-09",
+		"end_time" : null,
+		"latitude" : 18.4901,
+		"longitude" : 73.855
+	}
+]
