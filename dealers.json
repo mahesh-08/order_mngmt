@@ -1,0 +1,32 @@
+[
+  {
+    "dealer_id": 101,
+    "dealer_name": "AgroStar",
+    "region_id": 202,
+    "address": "survey no.42,Ratna chowk,bhavani peth, Pune"
+  },
+  {
+    "dealer_id": 102,
+    "dealer_name": "Agri Begri",
+    "region_id": 202,
+    "address": "survey no.42,Ratna chowk,bhavani peth, Pune"
+  },
+  {
+    "dealer_id": 103,
+    "dealer_name": "Agrosiaa",
+    "region_id": 202,
+    "address": "survey no.42,Ratna chowk,bhavani peth, Pune"
+  },
+  {
+    "dealer_id": 104,
+    "dealer_name": "krushi Seed",
+    "region_id": 201,
+    "address": "navi mumbai, mumbai"
+  },
+  {
+    "dealer_id": 105,
+    "dealer_name": "Unnat kisan",
+    "region_id": 201,
+    "address": "kalyan, mumbai"
+  }
+]
