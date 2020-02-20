@@ -1,0 +1,23 @@
+[
+  {
+    "user_id": 123,
+    "user_name": "123",
+    "password": "123",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "user_id": 1111,
+    "user_name": "raj",
+    "password": "raj111",
+    "latitude": 0,
+    "longitude": 0
+  },
+  {
+    "user_id": 1234,
+    "user_name": "mahesh",
+    "password": "mahesh08",
+    "latitude": 0,
+    "longitude": 0
+  }
+]
