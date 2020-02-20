@@ -1,0 +1,14 @@
+[
+  {
+    "crops_id": 11,
+    "crops_type": "field crops"
+  },
+  {
+    "crops_id": 22,
+    "crops_type": "fodder crops"
+  },
+  {
+    "crops_id": 33,
+    "crops_type": "vegetable crops"
+  }
+]
